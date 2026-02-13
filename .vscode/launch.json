@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "WHOIS Lookup",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/examples/basic_usage.py",
+            "console": "integratedTerminal",
+            "args": ["miro.com"]
+        },
+        {
+            "name": "Bulk WHOIS",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/examples/bulk_lookup.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Run Tests",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "args": ["tests/", "-v"]
+        }
+    ]
+}
